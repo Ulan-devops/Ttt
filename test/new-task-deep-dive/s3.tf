@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "b" {
-  bucket = "test-bucket-ulan"
+  bucket = "july-s3-ulanbayke"
   acl    = "private"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "Tanyusha"
     Environment = "Dev"
   }
     versioning {

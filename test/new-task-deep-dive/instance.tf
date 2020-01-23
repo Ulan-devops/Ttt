@@ -1,4 +1,4 @@
-resource "aws_instance" "web12" {
+resource "aws_instance" "ulanbayke" {
   count     = 1
   ami           = var.ami
   instance_type = var.instance_type
@@ -20,7 +20,7 @@ provisioner "remote-exec" {
     ]
 }
   tags = {
-    Name = "HelloWorld$(count.index +1)"
+    Name = "July-group_batch$(count.index +1)"
   }
 
   lifecycle{
